@@ -2,6 +2,8 @@
 
 A Transformer-based research paper summarization project built from scratch using PyTorch. This project trains a custom Transformer model on the Arxiv Summarization dataset to generate concise summaries of research papers.
 
+The tokenization was done using pretrained tokenizer.
+
 ## Model Architecture
 
 The project implements the core Transformer components manually, including:
