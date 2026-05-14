@@ -25,9 +25,8 @@ The model follows the sequence-to-sequence Transformer architecture commonly use
 
 ## Dataset
 
-This project uses the Arxiv Summarization Dataset from Hugging Face:
+This project uses the Arxiv Summarization Dataset from Hugging Face: [Arxiv Summarization Dataset](https://huggingface.co/datasets/ccdv/arxiv-summarization)
 
-[Arxiv Summarization Dataset](https://huggingface.co/datasets/ccdv/arxiv-summarization)
 
 The dataset contains:
 
