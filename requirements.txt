@@ -1,0 +1,5 @@
+torch
+numpy
+transformers  # huggingface tokenization
+datasets      # huggingface datasets 
+matplotlib    # visualization
