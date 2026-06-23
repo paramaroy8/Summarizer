@@ -82,6 +82,9 @@ Inference experiments were conducted as a grid search over the following paramet
 | Min / Max length   |   5 / 500 tokens          |
 ```
 
+```
+Note: Inference hyperparameters were tuned on a partially trained model and will be re-optimized after full convergence.
+```
 Each run outputs all completed beams ranked by cumulative log-probability, alongside the reference abstract for comparison.
 
 ## Installation
