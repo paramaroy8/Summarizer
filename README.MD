@@ -69,7 +69,7 @@ Summarization is performed using generation-based beam search with three layers 
 - **Temperature scaling** — controls output diversity; lower temperature produces more focused summaries
 
 Inference experiments were conducted as a grid search over the following parameters:
-
+```
 | Parameter          |   Values               |
 
 | Beam width         |   2 to 40 (even steps) |
@@ -77,6 +77,7 @@ Inference experiments were conducted as a grid search over the following paramet
 | Repetition penalty |   1.3, 1.4, 1.5        |
 | Temperature        |   1.0                  |
 | Min / Max length   |   5 / 500 tokens       |
+```
 
 Each run outputs all completed beams ranked by cumulative log-probability, alongside the reference abstract for comparison.
 
