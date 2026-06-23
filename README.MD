@@ -7,7 +7,7 @@ A Transformer-based research paper summarization model built from scratch using 
 All core Transformer components are implemented manually without relying on pre-built Transformer libraries.
 
 ```
-|             Component                       |   Value     |
+              Component                           Value     
 
 | d_model                                     |   512       |
 | Encoder blocks                              |   5         |
@@ -70,13 +70,13 @@ Summarization is performed using generation-based beam search with three layers 
 
 Inference experiments were conducted as a grid search over the following parameters:
 ```
-| Parameter          |   Values               |
+    Parameter                 Values               
 
-| Beam width         |   2 to 40 (even steps) |
-| N-gram size        |   4, 5                 |
-| Repetition penalty |   1.3, 1.4, 1.5        |
-| Temperature        |   1.0                  |
-| Min / Max length   |   5 / 500 tokens       |
+| Beam width         |   2 to 40 (even steps)    |
+| N-gram size        |   4, 5                    |
+| Repetition penalty |   1.3, 1.4, 1.5           |
+| Temperature        |   1.0                     |
+| Min / Max length   |   5 / 500 tokens          |
 ```
 
 Each run outputs all completed beams ranked by cumulative log-probability, alongside the reference abstract for comparison.
