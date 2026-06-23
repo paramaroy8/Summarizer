@@ -2,7 +2,7 @@
 
 A Transformer-based research paper summarization model built from scratch using PyTorch. The model is trained on the ArXiv Summarization dataset to generate concise summaries of research papers, using article body text as input and the abstract as the target.
 ```
-Status: Training is still in progress. Model has not fully converged yet.
+Status: Training still in progress; model has not fully converged yet.
 ```
 
 ## Model Architecture
