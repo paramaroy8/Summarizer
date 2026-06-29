@@ -65,7 +65,7 @@ Training uses a chunk-based approach — rather than iterating over the full dat
 
 ## Inference
 
-Summarization is performed using generation-based beam search with three layers of output quality control:
+Summarization is performed using beam search with three layers of output quality control:
 
 - **Repetition penalty** — scales down the probability of previously generated tokens to discourage repetition
 - **N-gram blocking** — blocks any token that would complete a previously seen n-gram sequence (configurable n)
