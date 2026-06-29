@@ -144,8 +144,8 @@ Summarizer/
 ├── visualize.py                  # loss and perplexity curve plotting
 ├── inference_variants.py         # various inferences
     │
-    ├──loss_based_inference.py    # teacher-forced loss-based inference
-    ├──beam_search.py             # Decoding with beam search with n_gram and repetition penalty
+    ├── loss_based_inference.py   # teacher-forced loss-based inference
+    ├── beam_search.py            # Decoding with beam search with n_gram and repetition penalty
 ├── generation_based_inference.py # beam search inference
 ├── utils.py                      # logging utilities, tensor debug helpers
 ├── requirements.txt
