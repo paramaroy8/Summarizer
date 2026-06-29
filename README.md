@@ -128,26 +128,26 @@ python generation_based_inference.py
 ```
 Summarizer/
 │
-├── get_full_dataset.py           # download and save ArXiv dataset
-├── tokenization.py               # tokenize articles and abstracts
-├── embeddings.py                 # token embeddings + sinusoidal positional encoding
-├── attention_block.py            # multi-head attention
-├── normalize_layer.py            # custom layer normalization
-├── feed_forward_network.py       # SwiGLU feed-forward network
-├── single_encoder_block.py       # single encoder block (attention + FFN + norm)
-├── full_encoder.py               # stacked encoder blocks
-├── single_decoder_block.py       # single decoder block (masked att + cross att + FFN + norm)
-├── full_decoder.py               # stacked decoder blocks
-├── building_blocks.py            # model initialization, checkpoint load/save, forward pass, train/val blocks
-├── train_and_validation.py       # main training and validation loop
-├── model_train.py                # entry point for training runs
-├── visualize.py                  # loss and perplexity curve plotting
-├── inference_variants.py         # various inferences
+├── get_full_dataset.py               # download and save ArXiv dataset
+├── tokenization.py                   # tokenize articles and abstracts
+├── embeddings.py                     # token embeddings + sinusoidal positional encoding
+├── attention_block.py                # multi-head attention
+├── normalize_layer.py                # custom layer normalization
+├── feed_forward_network.py           # SwiGLU feed-forward network
+├── single_encoder_block.py           # single encoder block (attention + FFN + norm)
+├── full_encoder.py                   # stacked encoder blocks
+├── single_decoder_block.py           # single decoder block (masked att + cross att + FFN + norm)
+├── full_decoder.py                   # stacked decoder blocks
+├── building_blocks.py                # model initialization, checkpoint load/save, forward pass, train/val blocks
+├── train_and_validation.py           # main training and validation loop
+├── model_train.py                    # entry point for training runs
+├── visualize.py                      # loss and perplexity curve plotting
+├── inference_variants.py             # various inferences
     │
-    ├── loss_based_inference.py   # teacher-forced loss-based inference
-    ├── beam_search.py            # Decoding with beam search with n_gram and repetition penalty
-├── generation_based_inference.py # beam search inference
-├── utils.py                      # logging utilities, tensor debug helpers
+    ├── loss_based_inference.py       # teacher-forced loss-based inference
+    ├── pure_greedy_decoding.py       # pure greedy decoding
+    ├── beam_search.py                # decoding with beam search with n_gram and repetition penalty
+├── utils.py                          # logging utilities, tensor debug helpers
 ├── requirements.txt
 └── README.md
 ```
