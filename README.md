@@ -103,7 +103,7 @@ python tokenization.py
 python model_train.py
 ```
 
-**Run inference:**
+**Run beam search inference:**
 ```bash
 python beam_search.py
 ```
