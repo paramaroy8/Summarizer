@@ -142,7 +142,10 @@ Summarizer/
 ├── train_and_validation.py       # main training and validation loop
 ├── model_train.py                # entry point for training runs
 ├── visualize.py                  # loss and perplexity curve plotting
-├── loss_based_inference.py       # teacher-forced loss-based inference
+├── inference_variants.py         # various inferences
+    │
+    ├──loss_based_inference.py    # teacher-forced loss-based inference
+    ├──beam_search.py             # Decoding with beam search with n_gram and repetition penalty
 ├── generation_based_inference.py # beam search inference
 ├── utils.py                      # logging utilities, tensor debug helpers
 ├── requirements.txt
