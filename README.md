@@ -71,19 +71,12 @@ Summarization is performed using generation-based beam search with three layers 
 - **N-gram blocking** — blocks any token that would complete a previously seen n-gram sequence (configurable n)
 - **Temperature scaling** — controls output diversity; lower temperature produces more focused summaries
 
-Inference experiments were conducted as a grid search over the following parameters:
-```
-    Parameter                 Values               
-
-| Beam width         |   2 to 40 (even steps)    |
-| N-gram size        |   4, 5                    |
-| Repetition penalty |   1.3, 1.4, 1.5           |
-| Temperature        |   1.0                     |
-| Min / Max length   |   5 / 500 tokens          |
-```
+Beam search experiments are parameterized through iterable hyperparameter lists, enabling exhaustive grid-search over combinations.
 
 ```
 Note: Inference hyperparameters were tuned on a partially trained model and will be re-optimized after full convergence.
+
+In addition, in the inference_variants file, I have added several different ways of decoding the transformer output for inference. As I explore more strategies, I will add more files there.
 ```
 Each run outputs all completed beams ranked by cumulative log-probability, alongside the reference abstract for comparison.
 
@@ -112,7 +105,7 @@ python model_train.py
 
 **Run inference:**
 ```bash
-python generation_based_inference.py
+python beam_search.py
 ```
 
 ## Example Workflow
