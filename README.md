@@ -116,10 +116,11 @@ python beam_search.py
 ## Example Workflow
 
 1. Download the ArXiv dataset and save to disk
-2. Tokenize articles and abstracts using the BART tokenizer
-3. Train the encoder-decoder Transformer in chunks, saving checkpoints after each chunk
-4. Monitor training and validation loss curves using Matplotlib
-5. Generate summaries from unseen papers using beam search with repetition penalty and n-gram blocking
+2. Clean the dataset, and save to disk
+3. Tokenize the clan dataset articles and abstracts using the BART tokenizer
+4. Train the encoder-decoder Transformer in chunks, saving checkpoints after each chunk
+5. Monitor training and validation loss curves using Matplotlib
+6. Generate summaries from unseen papers using beam search with repetition penalty and n-gram blocking
 
 ## Project Structure
 
