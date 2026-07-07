@@ -93,6 +93,11 @@ pip install -r requirements.txt
 python get_full_dataset.py
 ```
 
+**Clean and save dataset:**
+```bash
+python clean_dataset.py
+```
+
 **Tokenize dataset:**
 ```bash
 python tokenization.py
