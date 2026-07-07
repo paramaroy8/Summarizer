@@ -154,7 +154,7 @@ Summarizer/
 
 ## Future Improvements
 
-- **Data cleaning** — strip arXiv artifacts and retokenize the full dataset for a cleaner training run
+- **Data cleaning** — strip arXiv artifacts and retokenize the full dataset for a cleaner training run (in progress)
 - **Reasoning traces** — fine-tune the model to generate structured `<think>...</think><summary>...</summary>` output, derived programmatically from existing abstracts (problem → contribution → method → results), with the reasoning span masked from the loss during training
 - **Speculative decoding** — train a lightweight draft decoder (2–3 blocks, same d_model) to propose tokens ahead, with the full 10-block decoder verifying in a single parallel pass; particularly useful when combined with longer reasoning trace generation at inference time
 - **Scheduler improvement** — replace fixed-interval `ReduceLROnPlateau` stepping with organic stepping tied to true validation loss stagnation
